@@ -1,0 +1,12 @@
+<h2>Cuentos</h2>
+<div class="card mb-2" *ngFor="let row of rows">
+  <div class="card-body">
+    <h5 class="card-title"> {{ row.title }} </h5>
+    <p class="card-text">Autor: {{ row.author }} </p>
+    
+    <hr>
+    <p class="card-text"> {{ row.content.slice(0,300).trim() }}... </p>
+    <p class="card-text">Subido por:  {{ row.user }} </p>
+    <a href="#" class="btn btn-primary">Seguir leyendo</a>
+  </div>
+</div>
